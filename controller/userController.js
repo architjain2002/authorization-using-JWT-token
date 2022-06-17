@@ -36,7 +36,7 @@ exports.registerUsers = async function (req, res) {
     // Create token
     const token = jwt.sign(
       { user_id: user._id, email },
-      "i-am-a-programmer-interested-in-web-developement",
+      process.env.SECRET_KEY,
       {
         expiresIn: "2h",
       }

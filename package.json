@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/architjain2002/authorization-using-JWT-token/issues"
   },
-  "homepage": "https://github.com/architjain2002/authorization-using-JWT-token#readme"
+  "homepage": "https://github.com/architjain2002/authorization-using-JWT-token#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.8"
+  }
 }

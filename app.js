@@ -6,6 +6,8 @@ const app = express();
 
 app.use(express.json());
 
-// Logic goes here
+var userRouter = require("./route/userRoute.js");
+
+app.use("/home", userRouter);
 
 module.exports = app;

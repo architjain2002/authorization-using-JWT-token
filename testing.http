@@ -1,0 +1,17 @@
+POST http://127.0.0.1:4001/home/register HTTP/1.1
+content-type: application/json
+
+
+{
+    "first_name": "archit",
+    "last_name": "jain",
+    "email": "arcyjain2002@gmail.com",
+    "password": "Password1"
+}
+
+
+###
+
+
+
+

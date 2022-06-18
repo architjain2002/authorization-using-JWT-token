@@ -25,3 +25,8 @@ content-type: application/json
 ###
 
 
+GET http://127.0.0.1:4001/home/post HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhZGUyNTNjMzA1NmQzNWM4MzA4ZTMxIiwiZW1haWwiOiJhcmN5amFpbjIwMDJAZ21haWwuY29tIiwiaWF0IjoxNjU1NTcxNDUxLCJleHAiOjE2NTU1Nzg2NTF9.WPEKC6jAahr8H-BXXbqDC8imUrIuNlCod-AUloacYn0
+
+###
+

@@ -70,7 +70,7 @@ exports.loginUsers = async function (req, res) {
       // Create token
       const token = jwt.sign(
         { user_id: user._id, email },
-        process.env.TOKEN_KEY,
+        process.env.SECRET_KEY,
         {
           expiresIn: "2h",
         }
@@ -81,10 +81,17 @@ exports.loginUsers = async function (req, res) {
 
       // user
       res.status(200).json(user);
+    } else {
+      res.status(400).send("Invalid Credentials");
     }
-    res.status(400).send("Invalid Credentials");
   } catch (err) {
+    res.status(400);
     console.log(err);
   }
   // Our register logic ends here
+};
+
+exports.userPosts = async function (req, res) {
+  const info = await User.findOne({ email: req.authUser.email });
+  res.json(info);
 };

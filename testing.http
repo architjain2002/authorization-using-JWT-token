@@ -12,6 +12,21 @@ content-type: application/json
 
 ###
 
+
+POST http://127.0.0.1:4001/home/register HTTP/1.1
+content-type: application/json
+
+
+{
+    "first_name": "john",
+    "last_name": "doe",
+    "email": "example@example.com",
+    "password": "helloworld"
+}
+
+
+###
+
 POST http://127.0.0.1:4001/home/login HTTP/1.1
 content-type: application/json
 
@@ -19,6 +34,18 @@ content-type: application/json
 {
     "email": "arcyjain2002@gmail.com",
     "password": "Password1"
+}
+
+
+###
+
+POST http://127.0.0.1:4001/home/login HTTP/1.1
+content-type: application/json
+
+
+{
+    "email": "example@example.com",
+    "password": "helloworld"
 }
 
 

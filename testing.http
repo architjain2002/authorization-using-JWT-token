@@ -12,6 +12,16 @@ content-type: application/json
 
 ###
 
+POST http://127.0.0.1:4001/home/login HTTP/1.1
+content-type: application/json
 
+
+{
+    "email": "arcyjain2002@gmail.com",
+    "password": "Password1"
+}
+
+
+###
 
 
